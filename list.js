@@ -25,6 +25,13 @@ class List {
     }
   }
 
+  showTodos() {
+  console.log('\nTodos:');
+  this.todoList.forEach((todo, index) => {
+    console.log(`${index + 1}. ${todo}`);
+  });
+}
+
   printList() {
     console.log("Todo List:");
     this.todoList.forEach((item, index) => {
